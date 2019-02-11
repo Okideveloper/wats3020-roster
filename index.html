@@ -6,7 +6,7 @@
 
   <title>WATS 3020: Course Roster</title>
   <meta name="description" content="WATS 3020 Course Roster Project">
-  <meta name="author" content="Jane Student">
+  <meta name="author" content="Amanda Teague">
 
   <link rel="stylesheet" href="css/main.css">
 
@@ -15,8 +15,8 @@
 
 <body>
   <h1 id="course-title">EXMPL 401: Course Name</h1>
-  <p>Teacher: <span id="course-teacher">Jane Doe</span></p>
-  <p id="course-description">Lorem ipsum dolor sit amet.</p>
+  <p><b>Teacher:</b> <span id="course-teacher">Jane Doe</span></p>
+  <p> <b>Course description:</b> <span id="course-description">""</p>
   <hr>
   <p class="controls"><button id="add-teacher">Set Teacher</button> <button id="add-student">Add Student</button></p>
   <table id="roster">
@@ -25,11 +25,21 @@
       <tr>
         <th scope="col">Name</th>
         <th scope="col">Email</th>
+        <th scope="col">Birth</th>
         <th scope="col">Attendance</th>
         <th scope="col">Actions</th>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <th scope="row">Jane Doe</th>
+        <td>jane@example.com</td>
+        <td>100%</td>
+        <td>
+          <button class="present" data-username="jane">Present</button>
+          <button class="absent" data-username="jane">Absent</button>
+        </td>
+      </tr>
       <tr>
         <th scope="row">Jane Doe</th>
         <td>jane@example.com</td>
